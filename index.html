@@ -4,78 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TANIA Y KEVIN ¡NOS CASAMOS!</title>
-    <link href=""https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNl2yMAd6sNlKx1K06F7A-oF9" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="text-center p-5 text-white" style="background-image: url(''); background-size: cover;
-    background-position: center;">
-        <div class="bg-dark bg-opacity-50 p-4 rounded">
-            <h1 class="display-1">Tania & Kevin</h1>
-            <h2 class="display-3 mt-3">"Ahora pemanecen estas tres virtudes: la fe, la esperanza y el amor.
-                pero la más grande de ellas es el amor." 1 Corintios 13:13 
-            </h2>
-            <p class="lead mt-4 fs-3">17-01-2026</p>
-            <p class="lead fs-4">El carmen de Viboral, Antioquia</p>
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="images/anillos.png" alt="anillos" class="anillos-preloader">
+            <p>Cargando nuestra historia...</p>
         </div>
-    </header>
-
-    <section class="container my-5 text-center">
-        <h3 class="mb-4">¡Bienvenidos a nuestro gran día!</h3>
-        <p class="fs-5 px-md-5 mx-md-5">Con el corazón lleno de alegría, queremos compartirle la noticia más bonita de nuestras
-            vidas: ¡Nos casamos!, nos haría inmensamente felices que nos acompañes en este momento tan especial para nosotros
-            y que seas testigo de nuestro amor.
-        </p>
-    </section>
-    <section class="container my-5">
-        <div class="row text-center justify-content-center">
-            <div class="col-lg-8">
+    </div>
+    <div id="landing-container">
+        <header class="text-center p-5 text-white">
+            <div class="container">
                 <div class="card p-4">
-                    <h4 class="card-tittle">La celebración</h4>
-                    <p class="card-text lead">Nos reuniremos en:</p>
-                    <p class="card-text">
-                        <strong>Evento Nueva Era</strong><br>
-                        El carmen de Viboral, Antioquia
-                    </p>
-                    <a href="https://maps.app.goo.gl/uUHq8zwP4P7k7QpV6" target="_blank" class="btn btn-dark mt-3">
-                        <i class="bi bi-geo-alt-fill me-2"></i> Ver Ubicación
-                    </a>
-                    <p class="mt-4">Hora: 4:00 pm</p>
-                    <p class="mt-4">Codigo de vestimenta: Formal (importante, NO usar Blanco o Gris oscuro)</p>
+                    <h1 class="display-1">TANIA & KEVIN</h1>
+                    <img src="images/fondo.jpg" class="img-fluid rounded my-4" alt="Imagen de pareja">
+                    <h2 class="display-3 mt-3">"Ahora pemanecen estas tres virtudes: la fe, la esperanza y el amor.
+                        pero la más grande de ellas es el amor." 1 Corintios 13:13 
+                    </h2>
+                    <p class="lead mt-4 fs-3">17-01-2026</p>
+                    <p class="lead fs-4">El carmen de Viboral, Antioquia</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="contanier my-5 text-center">
-        <div class="row">}
-            <div class="col-md-6 mb-4">
+        </header>
+
+        <section class="container my-5 text-center">
+            <h3 class="mb-4">¡BIENVENIDO A NUESTRO GRAN DÍA!</h3>
+            <p class="fs-5 px-md-5 mx-md-5">Con el corazón lleno de alegría, queremos compartirte la noticia más bonita de nuestras
+                vidas: ¡Nos casamos!, nos haría inmensamente felices que nos acompañes en este momento tan especial para nosotros
+                y que seas testigo de nuestro amor.
+            </p>
+        </section>
+        <section class="container my-5 text-center">
+            <div class="card p-4 bg-light">
+                <h3><i class="bi bi-clock-fill me-2"></i>¡FALTAN!</h3>
+                <div id="countdown" class="d-flex justify-content-center mt-3">
+                    <div class="countdown-item mx-2">
+                        <h2 id="dias" class="display-4 mb-0">00</h2>
+                        <p>Días</p>
+                    </div>
+                    <div class="countdown-item mx-2">
+                        <h2 id="horas" class="display-4 mb-0">00</h2>
+                        <p>Horas</p>
+                    </div>
+                    <div class="countdown-item mx-2">
+                        <h2 id="minutos" class="display-4 mb-0">00</h2>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="countdown-item mx-2">
+                        <h2 id="segundos" class="display-4 mb-0">00</h2>
+                        <p>Segundos</p>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 text-center">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4">
+                        <h4 class="card-title">
+                            <i class="bi bi-geo-alt-fill me-2"></i> LA CELEBRACIÓN
+                        </h4>
+                        <i class="bi bi-house-fill display-2 mb-4" style="color: var(--color-malva);"></i>
+                        <p class="card-text lead">Nos reuniremos en:</p>
+                        <p class="card-text">
+                            <strong>Banquetes Nueva Era</strong><br>
+                            El carmen de Viboral, Antioquia
+                        </p>
+                        <a href="https://maps.app.goo.gl/uUHq8zwP4P7k7QpV6" target="_blank" class="btn btn-dark mt-3">
+                            <i class="bi bi-geo-alt-fill me-2"></i> Ver Ubicación
+                        </a>
+                        <p class="mt-4">Hora: 4:00 pm</p>
+                        <p class="mt-4">Codigo de vestimenta: Formal elegante (<strong>importante</strong>, evitar usar los colores: champagne y beige)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 text-center">
+            <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carrusel1.jpg" class="d-block w-100" alt="Foto de boda 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrusel2.jpg" class="d-block w-100" alt="Foto de boda 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrusel3.jpg" class="d-block w-100" alt="Foto de boda 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <section class="container my-5 text-center">
+            <div class="container col-md-6 mb-4">
                 <div class="card p-4 h-100">
-                    <h4 class="card-tittle">Comparte tus fotos</h4>
-                    <p class="card-text">Sube tus mejores momentos en nuestro album compartido</p>
-                    <img src="" alt="Código QR DOTS" class="img-fluid my-3 mx-auto" style="max-width: 200px;">
-                    <a href="" target="_blank" class="btn btn-outline-dark mt-2">
-                        <i class="bi bi-camera-fill me-2"></i> Ir al album de DOTS
-                    </a>
+                    <h4 class="card-title"><i class="bi bi-gift-fill me-2"></i>DETALLES</h4>
+                    <p class="card-text">Estamos felices de tu compañia en este día tan especial para nosotros.
+                        Si deseas aydarnos, tu aporte es bien recibido.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 p-3 bg-light">
+                                <h5 class="card-title">
+                                    <i class="bi bi-phone-fill me-2 text-primary"></i>Nequi
+                                </h5>
+                                <ul class="list-unstyled mt-2">
+                                    <li>
+                                        <i class="bi bi-person-circle me-1"></i>Kevin Montoya
+                                        <br>
+                                        <span class="fw-bold">324-587-2571</span>
+                                    </li>
+                                    <li class="mt-2">
+                                        <i class="bi bi-person-circle me-1"></i>Tania Bustos
+                                        <br>
+                                        <span class="fw-bold">319-768-6138</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 p-3 bg-light">
+                                <h5 class="card-title">
+                                    <i class="bi bi-envelope-fill me-2 text-primary"></i>Sobre
+                                </h5>
+                                <p class="card-text mt-2">
+                                    Puedes llevar el sobre el día del evento y depositarlo en el buzón.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card p-4 h-100">
-                <h4 class="card-tittle">Aporte voluntario</h4>
-                <p class="card-text">Tu presencia en nuestra boda es suficiente para nosotros; sin embargo,
-                    si deseas realizar algún aporte voluntario, puedes hacerlo aqui
-                </p>
-                <img src="" alt="Codigo QR PSE" class="img-fluid my-3 mx-auto" style="max-width: 200px;">
-                <a href="" target="_blank" class="btn btn-outline-dark mt-2">
-                    <i class="bi bi-wallet-fill me-2"></i> Ir a PSE
-                </a>
+        </section>
+
+        <section class="container my-5 text-center">
+            <div class="card p-4">
+                <h3 class="card-title text-center">
+                    <i class="bi bi-check-circle-fill me-2"></i> CONFIRMA TU ASISTENCIA
+                </h3>
+                <p class="text-center">Por favor, ayúdanos a planear mejor este día confirmando tu asistencia</p>
+                <form id="rsvp-form" class="mt-4" action="https://formspree.io/f/mdklyeal" method="post">
+                    <div class="mb-3">
+                        <label for="nombre-familia" class="form-label">Selecciona tu nombre</label>
+                        <select class="form-select" id="nombre-familia" required>
+                            <option value="">-- Selecciona un nombre --</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cupos" class="form-label">Cupos asignados</label>
+                        <input type="text" class="form-control" id="cupos" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="asistencia" class="form-label">¿Asistirás?</label>
+                        <select class="form-select" id="asistencia" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">Sí, confirmo mi asistencia</option>
+                            <option value="no">No podré asistir</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label">Si tienes alguna alergia o restricción
+                            alimentaria, por favor indícanosla aquí:
+                        </label>
+                        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="juego-seccion" class="container my-5 text-center">
+            <div class="card p-4 d-none">
+                <h3 class="card-title mb-4">
+                    <i class="bi bi-controller-fill me-2"></i>¡Es hora de jugar!
+                </h3>
+                <p class="lead">Para que la diversión no pare, les traemos una serie de retos para toda la noche. ¡Completen la lista y pasenla genial!</p>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush text-start">
+                            <li class="list-group-item d-flex align-items-center"><i class="bi bi-camera-fill me-3 text-primary fs-4"></i>Tomar una foto con 5 personas desconocidas.</li>
+                            <li class="list-group-item d-flex align-items-center"><i class="bi bi-image-fill me-3 text-primary fs-4"></i>Buscar el espacio más original del lugar y hacer una foto divertida.</li>
+                            <li class="list-group-item d-flex align-items-center"><i class="bi bi-mic-fill me-3 text-primary fs-4"></i>Cuando el Dj pare la música de golpe, ¡todos congelados! Quien se mueva se le pone un reto.</li>
+                            <li class="list-group-item d-flex align-items-center"><i class="bi bi-person-fill me-3 text-primary fs-4"></i>Reto de las sillas.</li>
+                            <li class="list-group-item d-flex align-items-center"><i class="bi bi-emoji-laughing-fill me-3 text-primary fs-4"></i>Pasa la harina.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
