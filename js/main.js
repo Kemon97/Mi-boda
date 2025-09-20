@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Alfonso Bustos': 6,
         'Vladimir Bustos': 2,
         'Delia Navarro': 4,
-        'Emilsen': 2,
+        'Emilse Navarro': 2,
         'Jacklin Alviarez': 2,
         'Angel Beltran': 2,
         'Diani Prada': 6,
@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'Vanesa Ortiz': 1,
         'Yori Kamelo': 2,
         'Marcela Castaño': 2,
-        'Leonardo Valencia': 6,
+        'Leonardo Valencia': 4,
+        'Emmanuel Valencia': 2,
+        'Gadiel valencia': 2,
         'Angélica Buriticá': 1,
         'Juan Sebastian Valencia': 1,
         'Miguel Almenarez': 1,
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Alex Gallego': 2,
         'Oscar Palacio': 2,
         'Mariano Gomez': 3,
+        'Ricardo Angel': 2,
     };
 
     const selectNombre = document.getElementById('nombre-familia');
