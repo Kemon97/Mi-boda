@@ -1,6 +1,14 @@
 /* ================================== */
 /* VARIABLES Y FUENTES                */
 /* ================================== */
+
+@font-face {
+    font-family: 'bucklane';
+    src: url('../fonts/bucklanescript_personal_use_only-webfont.woff'), url('../fonts/bucklanescript_personal_use_only-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --color-beige-claro: #F7ECCD;
     --color-malva: #DEC4C1;
@@ -18,7 +26,7 @@ body {
 }
 
 h1, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bucklane', sans-serif;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -167,7 +175,7 @@ section {
 /* ================================== */
 /* MEDIA QUERIES                      */
 /* ================================== */
-@media(max-width: 668px){
+@media(width >= 668px){
     h1 { font-size: 2.5rem; }
     h2 { font-size: 1.5rem; }
     p.lead { font-size: 1rem; }
