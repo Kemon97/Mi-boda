@@ -114,6 +114,16 @@ section {
         5px 5px 15px rgba(0, 0, 0, 0.2), 
         -5px -5px 15px rgba(255, 255, 255, 0.2);
     margin: 2rem auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.5),
+        10px 10px 20px rgba(0, 0, 0, 0.3), 
+        -10px -10px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Nuevo estilo para las tarjetas internas de la sección de "Detalles" */
@@ -125,12 +135,16 @@ section {
         inset -3px -3px 6px rgba(255, 255, 255, 0.4),
         3px 3px 8px rgba(0, 0, 0, 0.1), 
         -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out
 }
 
-.info-box {
-    background-color: var(--color-blanco);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.4),
+        6px 6px 12px rgba(0, 0, 0, 0.2), 
+        -6px -6px 12px rgba(255, 255, 255, 0.3);
 }
 
 /* ================================== */
