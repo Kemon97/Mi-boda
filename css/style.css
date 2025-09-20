@@ -65,6 +65,9 @@ h2 {
 }
 
 .anillos-preloader {
+    max-width: 100em;
+    height: auto;
+    animation: pulsate 2s infinite alternate;
     font-size: 1.5rem;
     color: #6c757d;
     font-family: 'Playfair Display', serif;
@@ -99,12 +102,29 @@ section {
     padding-bottom: 4rem;
 }
 
+/* Nuevo estilo para las tarjetas */
 .card {
+    position: relative;
     background-color: var(--color-blanco);
     border: none;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.5),
+        5px 5px 15px rgba(0, 0, 0, 0.2), 
+        -5px -5px 15px rgba(255, 255, 255, 0.2);
     margin: 2rem auto;
+}
+
+/* Nuevo estilo para las tarjetas internas de la sección de "Detalles" */
+.info-box {
+    background-color: var(--color-beige-claro);
+    border-radius: 10px;
+    box-shadow: 
+        inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.4),
+        3px 3px 8px rgba(0, 0, 0, 0.1), 
+        -3px -3px 8px rgba(255, 255, 255, 0.2);
 }
 
 .info-box {
@@ -175,7 +195,7 @@ section {
 /* ================================== */
 /* MEDIA QUERIES                      */
 /* ================================== */
-@media(width >= 668px){
+@media(width >= 330px){
     h1 { font-size: 2.5rem; }
     h2 { font-size: 1.5rem; }
     p.lead { font-size: 1rem; }
