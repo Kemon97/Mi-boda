@@ -163,20 +163,20 @@
                     <i class="bi bi-check-circle-fill me-2"></i> Confirma tu asistencia
                 </h3>
                 <p class="text-center">Por favor, ayúdanos a planear mejor este día confirmando tu asistencia</p>
-                <form id="rsvp-form" class="mt-4" action="https://formspree.io/f/mdklyeal" method="post">
+                <form id="rsvp-form" class="mt-4" action="https://formspree.io/f/mdklyeal" method="POST">
                     <div class="mb-3">
                         <label for="nombre-familia" class="form-label">Selecciona tu nombre</label>
-                        <select class="form-select" id="nombre-familia" required>
+                        <select class="form-select invitado-select" id="nombre-familia" name="seleccion" required>
                             <option value="">-- Selecciona un nombre --</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="cupos" class="form-label">Cupos asignados</label>
-                        <input type="text" class="form-control" id="cupos" readonly>
+                        <input type="text" class="form-control" id="cupos" name="-cupos-" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="asistencia" class="form-label">¿Asistirás?</label>
-                        <select class="form-select" id="asistencia" required>
+                        <select class="form-select" id="asistencia" name="confirmacion" required>
                             <option value="">Selecciona una opción</option>
                             <option value="si">Sí, confirmo mi asistencia</option>
                             <option value="no">No podré asistir</option>
@@ -186,7 +186,7 @@
                         <label for="comentarios" class="form-label">Si tienes alguna alergia o restricción
                             alimentaria, por favor indícanosla aquí:
                         </label>
-                        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                        <textarea class="form-control" id="comentarios" rows="3" name="comentario"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Enviar</button>
                 </form>
