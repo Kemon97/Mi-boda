@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Enviar el formulario a Formspree
             const formData = new FormData(rsvpForm);
+            formData.append(selectElement.name, selectedName);
             fetch(rsvpForm.action, {
                 method: 'POST',
                 body: formData,
