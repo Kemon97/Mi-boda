@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Delia Navarro": { "cupos": 4, "asistencia": null, "juego": false },
         "Diani Prada": { "cupos": 6, "asistencia": null, "juego": false },
         "Eduardo Prada": { "cupos": 1, "asistencia": null, "juego": false },
-        "Emilse Navarro": { "cupos": 2, "asistencia": null, "juego": false },
+        "Emilse Navarro": { "cupos": 3, "asistencia": null, "juego": false },
         "Geno Hawkins": { "cupos": 3, "asistencia": null, "juego": false },
         "Gleidy Prada": { "cupos": 2, "asistencia": null, "juego": false },
         "Jacklin Alviarez": { "cupos": 2, "asistencia": null, "juego": false },
