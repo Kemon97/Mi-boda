@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Paola Galvis": { "cupos": 1, "asistencia": null, "juego": false },
         "Sandy Fernandez": { "cupos": 2, "asistencia": null, "juego": false },
         "Sandra Gil": { "cupos": 2, "asistencia": null, "juego": false },
+        "Santiago Prada": { "cupos": 1, "asistencia": null, "juego": false },
         "Sara Galvis": { "cupos": 1, "asistencia": null, "juego": false },
         "Sebastian Jaramillo": { "cupos": 3, "asistencia": null, "juego": false },
         "Sebastian Marín": { "cupos": 1, "asistencia": null, "juego": false },
