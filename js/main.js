@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Miguel Almenarez": { "cupos": 1, "asistencia": null, "juego": false },
         "Oscar Palacio": { "cupos": 2, "asistencia": null, "juego": false },
         "Paola Galvis": { "cupos": 1, "asistencia": null, "juego": false },
+        "Ricardo Angel": { "cupos": 2, "asistencia": null, "juego": false },
         "Sandy Fernandez": { "cupos": 2, "asistencia": null, "juego": false },
         "Sandra Gil": { "cupos": 2, "asistencia": null, "juego": false },
         "Santiago Prada": { "cupos": 1, "asistencia": null, "juego": false },
